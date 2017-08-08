@@ -43,197 +43,71 @@ body, html {
         background-attachment: scroll;
     }
 }
-
-@import "compass/css3";
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
-}
-body {
-  font-size: 16px;
-  font-family: Helvetica, Arial, Sans-Serif;
-    background-color: #ddd;
-}
-a {text-decoration: none;}
-.container {
-  width:98%;
-  height: 100%;
-  margin: 0 auto;
-
-  display: block;  
-}
-
-.col {
-   width: 100%;
-   padding:5%;
-   background-color: red;
-  margin-bottom: 5%;
-  border-top: 5px solid red;
-}
-.h1, p {
-    color: #333;
-    text-align: left;
-}
-  h1 {
-    font-size: 1em;
-    line-height: 1em;
-  }
-  p {
-    font-size: 1em;
-    line-height: 1em;
-    color:white;
-  }
-  a {
-    color: inherit;
-    &:hover {
-     color: white; 
+    #circle-wrapper{
+    position:relative;
+    top:0;
+    left:0; 
     }
-  }  
 
-/* the blue circle with only one line of text, centered vertically */
-.oneline {
-  &:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height:0;
-    padding-bottom: 100%;
-    background: cadetblue;
+    .circle1, .circle2, .circle3, .circle4 {
+    position:absolute;
     -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    -webkit-border-radius: 50%; 
     border-radius: 50%;
-  }
-  &:hover:after {
-    background-color: goldenrod;
-  }
- div {
-    float:left;
-    width:100%;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-1.7em;
-    text-align:center;
-    color:white;
- }
-  p {text-align: center; font-size: 1.2em;}
-}
-
-
-@media only screen and (min-width: 350px) {
-
-.col {
-   display: inline-block;
-   position: relative;
-   width: 30%;
-   margin:4% 0 5% 3%;
-   padding:0;
-   background-color: transparent;
-    border-top: none;
-  .spacer {
-    position: relative;
-    padding-top: 100%;
-   }
-  &:nth-child(3n+1) {
-	   margin-left: 1%;
-	   }
-  
-}
-.circle {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: powderblue;
-    color: #333;
-    border-radius: 50%;
-    box-sizing: border-box;
-    text-align: center;
-    display: block;
-  padding: 5px;
-    &:before {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      margin-right: -2%;
-     }
-      border: 5px solid darken(powderblue, 5%);
-      -webkit-transition: all 1s ease-out;
-      -moz-transition: all 1s ease-out;
-      -o-transition: all 1s ease-out;
-      transition: all 1s ease-out;
-     &:hover {
-       background-color: maroon;
-       border: 5px solid darken(maroon, 10%);
-       color: #fff;
-       }
- }
- 
-
-  .outline {
-    border: 5px solid grey;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 50%;
-    box-sizing: border-box;
-  }
-  
-.circle {
-  h1 {
-    font-size: 0.9em;
-    line-height: 1em;
-
-  }
-  p {
-    font-size: 0.8em;
-    line-height: 1em;
-    color:white;
-    text-align: center;
-  }
-  a {
-    color: inherit;
-  }
-  &>p, &>h1, &>.wrapcontent {
-    display: inline-block;
-    vertical-align: middle;
-    &>p, &>h1 {
-      display:block;
+    width: 32%;
+    height: 32%;
+    padding-bottom: 32%;
     }
-  }
-}
 
+    h1.circle1 h1 {
+    display:inline-block;
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+    }
 
-}
-@media only screen and (min-width: 481px) {
-.circle {
-  h1 {
-    font-size: 1.2em;
-    line-height: 1em;
-  }
-  p {
-    font-size: 1em;
-    line-height: 1em;
-  }
-}
-}
-@media only screen and (min-width: 768px) {
-.circle {
-  h1 {
-    font-size: 1.6em;
-    line-height: 1em;
-  }
-  p {
-    font-size: 1.2em;
-    line-height: 1em;
-  }
-}
-}
+    .circle1 {
+    background-color:#889fbe;
+    color:000;
+    margin-top:-8%;
+    left:10%;
+    }
+
+    .circle2 {
+    margin-top:10%;
+    color:000;
+    left:24%;
+    background-color:#b1daf6;
+    }
+
+    .circle3 {
+    margin-top:24%;
+    left:10%;
+    background-color:#4f4f51;
+    }
+
+    .circle4 {
+    margin-top:10%;
+    left:-8%;
+    background-color:#56a0d3;   
+    }
+
+    .transparent_class {
+    /* IE 8 */
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=70);
+
+    /* Netscape */
+    -moz-opacity: 0.7;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.7;
+
+    /* Good browsers */
+    opacity: 0.7;
+    }
 </style>
 <body>
 
@@ -254,70 +128,5 @@ a {text-decoration: none;}
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">THE <span class="w3-hide-small"> HOMELESS</span> HELPER</span>
   </div>
 </div>
-
-<div class="container">  
-
-      <article class="col oneline">
-        <div class="circle-in"><p></p></div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"><h1><a href="#"></a></h1> </div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"><div class="wrapcontent"><h1><a href="#"></p>
-          </div>
-        </div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"><div class="wrapcontent"
-          <h1><a href="#"></a></h1></div> </div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-       <div class="outline"> <div class="circle">
-          <h1><a href="#"></a></h1> </div></div>
-      </article>
-   <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"> 
-          <h1><a href="#"></a></h1>
-          </div>
-      </article>
-<div class="container">  
-
-      <article class="col oneline">
-        <div class="circle-in"><p></p></div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"><h1><a href="#"></a></h1> </div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"><div class="wrapcontent"><h1><a href="#"></a></h1><p></p>
-          </div>
-        </div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"><div class="wrapcontent"
-          <h1><a href="#"></a></h1></div> </div>
-      </article>
-      <article class="col">
-        <div class="spacer"></div>
-       <div class="outline"> <div class="circle">
-          <h1><a href="#"></a></h1> </div></div>
-      </article>
-   <article class="col">
-        <div class="spacer"></div>
-        <div class="circle"> 
-          <h1><a href="#"></a></h1>
-          </div>
-      </article>
-</div>
-
 </body>
 </html>
