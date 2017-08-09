@@ -43,70 +43,16 @@ body, html {
         background-attachment: scroll;
     }
 }
-    #circle-wrapper{
-    position:relative;
-    top:0;
-    left:0; 
-    }
-
-    .circle1, .circle2, .circle3, .circle4 {
-    position:absolute;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%; 
-    border-radius: 50%;
-    width: 32%;
-    height: 32%;
-    padding-bottom: 32%;
-    }
-
-    h1.circle1 h1 {
-    display:inline-block;
-    display: table-cell; 
-    vertical-align: middle; 
-    text-align: center;
-    }
-
-    .circle1 {
-    background-color:#889fbe;
-    color:000;
-    margin-top:-8%;
-    left:10%;
-    }
-
-    .circle2 {
-    margin-top:10%;
-    color:000;
-    left:24%;
-    background-color:#b1daf6;
-    }
-
-    .circle3 {
-    margin-top:24%;
-    left:10%;
-    background-color:#4f4f51;
-    }
-
-    .circle4 {
-    margin-top:10%;
-    left:-8%;
-    background-color:#56a0d3;   
-    }
-
-    .transparent_class {
-    /* IE 8 */
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-
-    /* IE 5-7 */
-    filter: alpha(opacity=70);
-
-    /* Netscape */
-    -moz-opacity: 0.7;
-
-    /* Safari 1.x */
-    -khtml-opacity: 0.7;
-
-    /* Good browsers */
-    opacity: 0.7;
+.circle
+    {
+    width:500px;
+    height:500px;
+    border-radius:250px;
+    font-size:50px;
+    color:#fff;
+    line-height:500px;
+    text-align:center;
+    background:#000
     }
 </style>
 <body>
@@ -128,5 +74,6 @@ body, html {
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">THE <span class="w3-hide-small"> HOMELESS</span> HELPER</span>
   </div>
 </div>
+<div class="circle">Hello I am A Circle </div>
 </body>
 </html>
