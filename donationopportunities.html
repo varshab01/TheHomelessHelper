@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+  <title>The Homeless Helper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 <style>
-       /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
+.navbar {
       margin-bottom: 0;
       border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
     }
 .dropbtn {
     background-color: #4CAF50;
@@ -23,12 +22,10 @@
     border: none;
     cursor: pointer;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -37,20 +34,16 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
@@ -84,25 +77,10 @@ a:hover {
       background-color: #f2f2f2;
       padding: 25px;
     }
-    
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
   </style>
 </head>
 <body>
-<body background="Background2.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300" rel="stylesheet">
-  <title>The Homeless Helper</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -125,23 +103,71 @@ body, html {
     </div>
   </div>
 </nav>
+<body>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('HomeBack.jpg');
+    min-height: 100%;
+}
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+</style>
+<body>
 <p style = "font-family : courier; text-align : center;"><font size = "15"><strong>Donation Opportunities Near You!</strong></font></p>
 <center><div class="dropdown">                                                        
   <button class="dropbtn">Pick your state!</button>
   <center><div class="dropdown-content">
-    <a href="#">New Jersey</a>
-    <a href="#">New York</a>
-    <a href="#">Maryland</a>
-    <a href="#">Virginia</a>
-    <a href="#">West Virginia</a>
+    <a href="#">Maine</a>
+    <a href="#">New Hampshire</a>
+    <a href="#">Vermont</a>
+    <a href="#">Masachusetts</a>
+    <a href="#">Rhode Island</a>
     <a href="#">Connecticut</a>
-    <a href="#">Massachusetts</a>
+    <a href="#">New York</a>
+    <a href="#">Pennsylvania</a>
+    <a href="#">New Jersey></a>
+    <a href="#">Delaware</a>
+    <a href="#">Maryland</a>
+    <a href="#">West Virginia</a>
+    <a href="#">Virginia</a>
+    <a href="#">North Carolina</a>
+    <a href="#">South Carolina</a>
+    <a href="#">Georgia</a>
+    <a href="#">Florida</a>
   </div>
 </div>
 </style>
