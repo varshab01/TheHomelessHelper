@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html>
+<head>
 <style>
-<script>if (window.addEventListener){ window.addEventListener("message", function(event) 
-<style>{ if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 </style>
+</head>
 <body>
-<iframe src="https://createaclickablemap.com/map.php?&id=63006&maplocation=false&online=true" width="900" height="525" style="border: none;"></iframe>
+<p style = "font-family : courier; text-align : center;"><font size = "15"><strong>Donation Opportunities Near You!</strong></font></p>
+<center><div class="dropdown">                                                        
+  <button class="dropbtn">Pick your state!</button>
+  <center><div class="dropdown-content">
+    <a href="#">New Jersey</a>
+    <a href="#">New York</a>
+    <a href="#">Maryland</a>
+    <a href="#">Virginia</a>
+    <a href="#">West Virginia</a>
+    <a href="#">Connecticut</a>
+    <a href="#">Massachusetts</a>
+  </div>
+</div>
 </body>
 </html>
